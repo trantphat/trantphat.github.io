@@ -189,11 +189,11 @@
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
+          <i class="fa-solid fa-award" style="margin-right: 0.5em;"></i>{%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-align-justify" style="margin-right: 0.5em;"></i>Abs</a>
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
@@ -202,13 +202,13 @@
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-file-lines" style="margin-right: 0.5em;"></i>Bib</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-brands fa-html5" style="margin-right: 0.5em;"></i>HTML</a>
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-brands fa-html5" style="margin-right: 0.5em;"></i>HTML</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
@@ -234,7 +234,7 @@
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-code" style="margin-right: 0.5em;"></i>Code</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}

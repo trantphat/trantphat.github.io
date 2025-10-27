@@ -19,7 +19,8 @@
   pages       = {78--90},
   abstract    = {Waste segregation is a critical issue for environmental protection and sustainable growth. In Vietnam, public awareness and action on waste separation at source remain limited, highlighting the importance of engaging individuals, particularly students, in transforming waste disposal practices. Modern technologies, including the Internet of Things (IoT) and Artificial Intelligence (AI), have revolutionized various aspects of our lives and offer promising solutions to raise public awareness on this issue. This paper proposes an IoT device named BEG (BACHKHOA Eco-friendly Guide) integrating AI-based Computer Vision technology to classify waste via a camera. Unlike existing smart trash cans, which classify and dispose of the trash automatically, our device provides information about the waste type to guide users on proper disposal, thus reinforcing awareness of garbage classification at source. We also introduce the BEGNet, a Convolutional Neural Network (CNN) employing RegNetY120 as its backbone, which demonstrates superior performance in accuracy compared to other approaches on both the Trashnet dataset and our custom dataset - BKTrashImage. The proposed BEG device will improve knowledge about waste segregation, reduce improperly disposed waste, and foster a thriving circular economy.},
   isbn        = {978-981-99-7666-9},
-  html        = {https://link.springer.com/chapter/10.1007/978-981-99-7666-9_7}
+  html        = {https://link.springer.com/chapter/10.1007/978-981-99-7666-9_7},
+  preview     = {2024_BEG.png}
 }
 
 @mastersthesis{Tran2025,
@@ -32,5 +33,24 @@
   url         = {https://digital.lib.washington.edu/researchworks/items/b1b7acdc-2e9f-4313-9fae-49d516830f75},
   abstract    = {Accurately identifying and classifying crucial regulatory DNA sequences known as enhancers is a significant challenge, as traditional computational methods often struggle with their complex, context-dependent nature and lack interpretability. This thesis introduces StackBERT-Enhancer, a novel deep learning framework to address these limitations, focusing on two primary tasks: distinguishing enhancer sequences from non-enhancer sequences and classifying identified enhancers by their activity levels. The proposed framework employs multiple transformer-based language models, each independently trained on DNA sequences tokenized with different <i>k</i>-mer sizes, allowing for the capture of sequence dependencies across various scales. These individual models are then integrated into a stacking ensemble architecture, which significantly boosts classification accuracy, robustness, and generalization, achieving state-of-the-art results of 83.5% in enhancer identification and 99.0% in enhancer strength classification. The framework utilizes distributed multi-GPU systems for efficient model training and incorporates interpretability techniques such as SHapley Additive exPlanations (SHAP) for feature importance and attention score analysis for sequence motif discovery, bridging predictive power with biological insight. This advanced approach offers a robust and interpretable tool for enhancer analysis, holding strong potential for applications in disease modeling and broader biomedical research.},
   award       = {<b><a href="https://www.uwb.edu/stem/news/2025/07/22/stem-symposium-awards-2025">CSS Graduate Studies Best Thesis Award</a></b><br>Presented in recognition of the most outstanding master's thesis in Computing and Software Systems, demonstrating exceptional research quality, innovation, and academic contribution.},
-  award_name  = {Best Master Thesis Award}
+  award_name  = {Best Master Thesis Award},
+  html        = {https://digital.lib.washington.edu/researchworks/items/b1b7acdc-2e9f-4313-9fae-49d516830f75},
+  preview     = {2025_StackBERT-Enhancer.png}
+}
+
+@misc{tran2025lightweightclassifierdetectingintracranial,
+  abbr          = {arXiv},
+  bibtex_show   = {true},
+  title         = {Lightweight Classifier for Detecting Intracranial Hemorrhage in Ultrasound Data},
+  author        = {Phat Tran and Enbai Kuang and Fred Xu},
+  year          = {2025},
+  eprint        = {2510.20857},
+  archiveprefix = {arXiv},
+  primaryclass  = {eess.IV},
+  url           = {https://arxiv.org/abs/2510.20857},
+  abstract      = {Intracranial hemorrhage (ICH) secondary to Traumatic Brain Injury (TBI) represents a critical diagnostic challenge, with approximately 64,000 TBI-related deaths annually in the United States requiring rapid hemorrhage detection. Current diagnostic modalities including Computed Tomography (CT) and Magnetic Resonance Imaging (MRI) suffer from limitations including high cost, limited availability, and infrastructure dependence, particularly in resource-constrained environments. This study investigates machine learning approaches for automated ICH detection using Ultrasound Tissue Pulsatility Imaging (TPI), a portable diagnostic technique measuring tissue displacement induced by hemodynamic forces during cardiac cycles. We analyze ultrasound TPI signals comprising 30 temporal frames per cardiac cycle augmented with recording angle information, collected from TBI patients in clinical trials with CT-confirmed ground truth labels for ICH presence. Our preprocessing pipeline employs z-score normalization followed by Principal Component Analysis (PCA) for dimensionality reduction, retaining components explaining 95\% of cumulative variance. We systematically evaluate multiple classification algorithms spanning probabilistic, kernel-based, neural network, and ensemble learning approaches across three feature representations: original 31-dimensional space, reduced feature subset, and PCA-transformed space. Results demonstrate that PCA transformation substantially improves classifier performance, with ensemble methods achieving up to 98.0\% accuracy and F\(_1\)-score of 0.890, effectively balancing precision and recall despite significant class imbalance. These findings establish the feasibility of machine learning-based ICH detection in TBI patients using portable ultrasound devices, with potential applications in emergency medicine, rural healthcare, and military settings where traditional imaging modalities are unavailable.},
+  arxiv         = {2510.20857},
+  html          = {https://arxiv.org/abs/2510.20857},
+  preview       = {2025_ICH.png},
+  code          = {https://github.com/trantphat/intracranial-hemorrhage-classifier}
 }
